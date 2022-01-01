@@ -13,6 +13,5 @@ struct UserModel: Decodable {
     let fullName: String?
     let title: String?
     let family: String?
-    let image: String?
     let imageUrl: String?
 }
