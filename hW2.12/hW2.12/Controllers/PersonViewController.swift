@@ -9,7 +9,7 @@ import UIKit
 
 class PersonViewController: UIViewController {
     
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var imageView:  ImageView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet var fullNameLabel: UILabel!
@@ -29,15 +29,16 @@ class PersonViewController: UIViewController {
     }
     
     func fetchImage(){
-        DispatchQueue.global().async {
-        guard let stringURL = self.character.imageUrl else {return}
-        guard let imageURL = URL(string: stringURL) else {return}
-        guard let imageData = try? Data(contentsOf: imageURL) else {return}
-        DispatchQueue.main.async {
-            self.imageView.image = UIImage(data: imageData)
-            self.activityIndicator.stopAnimating()
-        }
-        }
+//        DispatchQueue.global().async {
+//        guard let stringURL = self.character.imageUrl else {return}
+//        guard let imageURL = URL(string: stringURL) else {return}
+//        guard let imageData = try? Data(contentsOf: imageURL) else {return}
+//        DispatchQueue.main.async {
+//            self.imageView.image = UIImage(data: imageData)
+//            self.activityIndicator.stopAnimating()
+//        }
+//        }
+        imageView.fetchImage(from: character.imageUrl)
     }
     
 }

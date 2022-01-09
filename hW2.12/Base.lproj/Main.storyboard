@@ -41,7 +41,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oYX-wT-NtE">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oYX-wT-NtE" customClass="ImageView" customModule="hW2_12" customModuleProvider="target">
                                             <rect key="frame" x="20" y="5" width="90" height="90"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="90" id="UX5-Gf-QQw"/>
@@ -128,7 +128,7 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Zlb-wM-1Z8">
                                 <rect key="frame" x="197" y="263.5" width="20" height="20"/>
                             </activityIndicatorView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5R5-to-hKI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5R5-to-hKI" customClass="ImageView" customModule="hW2_12" customModuleProvider="target">
                                 <rect key="frame" x="41.5" y="108" width="331" height="331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5R5-to-hKI" secondAttribute="height" multiplier="1:1" id="Lu3-1s-gDy"/>

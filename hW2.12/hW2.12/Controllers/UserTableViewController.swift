@@ -48,8 +48,9 @@ class UserTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UserTableViewCell
-        let character = characters[indexPath.row]
+        if let character = characters[indexPath.row] {
         cell.configure(with: character)
+        }
         return cell
     }
     
